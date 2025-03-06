@@ -16,5 +16,11 @@
         "episode": "Felipão - Flow #339",
         "videoId": "00000",
         "categories": ["esporte", "programação"]
+    },
+    {
+        "podcastName": "venus",
+        "episode": "Xuxa",
+        "videoId": "00067",
+        "categories": ["humor"]
     }
 ]

@@ -1,13 +1,20 @@
 import * as http from 'http';
 
-import { getListEpisodes } from "./controllers/podcasts-controller";
+import { getFilterEpisodes, getListEpisodes } from "./controllers/podcasts-controller";
 
 // Criando servidor
 const server = http.createServer(async (req: http.IncomingMessage, res: http.ServerResponse) => {
 
+    // queryString 
+    const [baseUrl, queryString] = req.url?.split('?') ?? ['',''];
+
     // Quando meu método for um GET 
-    if(req.method === 'GET') {
+    if(req.method === 'GET' && baseUrl === '/api/list') {
         await getListEpisodes(req, res);
+    }
+
+    if(req.method === 'GET' && baseUrl === '/api/episode') {
+        await getFilterEpisodes(req, res);
     }
 });
 
