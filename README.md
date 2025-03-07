@@ -13,6 +13,7 @@ Podcasts feitos em vídeo.
 
 ## Tecnologias Utilizadas  
 - **[Node.js](https://nodejs.org/)** - Ambiente de execução JavaScript no lado do servidor.  
+- **[Módulo HTTP (nativo)](https://nodejs.org/api/http.html)** - Módulo embutido do Node.js para criar servidores HTTP.
 - **[TypeScript](https://www.typescriptlang.org/)** - Superset do JavaScript que adiciona tipagem estática.  
 - **[TSX](https://github.com/esbuild-kit/tsx)** - Execução de TypeScript sem necessidade de compilação manual.  
 - **[Tsup](https://tsup.egoist.dev/)** - Empacotador eficiente para projetos TypeScript.  
